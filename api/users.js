@@ -8,6 +8,7 @@ const passport = require('passport')
 const JWT_SECRET = process.env.JWT_SECRET
 
 // Models
+const { User } = require('../models')
 
 // controllers
 const test = async (req, res) => {
@@ -15,6 +16,7 @@ const test = async (req, res) => {
 }
 
 // routes
+// GET -> /api/users/test
 router.get('/test', test)
 
 // POST api/users/register (Public)
